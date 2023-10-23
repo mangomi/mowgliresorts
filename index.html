@@ -18,10 +18,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-        }
-
-        h1, h2, p {
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+            background-color: rgba(0, 0, 0, 0.25); /* Half as dark background overlay */
         }
 
         header {
@@ -37,13 +34,13 @@
             font-size: 2em;
         }
 
-        .mid-content {
+        .bottom-content {
             text-align: center;
-            position: absolute; /* Positioning it 2/3rds of the way down */
-            top: 66%;
+            position: absolute; 
+            bottom: 10%; /* Positioning it 9/10 of the way down */
             left: 50%;
-            transform: translate(-50%, -50%); /* Centering */
-            width: 100%; /* Ensuring it spans the entire width */
+            transform: translateX(-50%); /* Centering horizontally */
+            width: 100%; 
         }
 
     </style>
@@ -54,7 +51,7 @@
         <h2>Return to the jungle</h2>
     </header>
 
-    <div class="mid-content">
+    <div class="bottom-content">
         <p>A wild luxurious experience</p>
         <p>South India. Opens 2025</p>
     </div>
