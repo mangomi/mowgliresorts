@@ -14,15 +14,18 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 100vh; /* Change from height to min-height */
+            min-height: 100vh; 
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: center; /* Vertically center */
+            align-items: center;     /* Horizontally center */
         }
 
-        header {
+        .centered-section {
             text-align: center;
-            padding: 50px 0;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px; /* Rounded corners for aesthetics */
         }
 
         h1 {
@@ -33,21 +36,14 @@
             font-size: 2em;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-        }
     </style>
 </head>
 <body>
-    <header>
+    <div class="centered-section">
         <h1>Mowgli Resorts</h1>
         <h2>Return to the jungle</h2>
-    </header>
-
-    <footer>
         <p>A wild luxurious experience</p>
         <p>South India. Opens 2025</p>
-    </footer>
+    </div>
 </body>
 </html>
